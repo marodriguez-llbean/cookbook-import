@@ -4,6 +4,9 @@ class Recipe {
         this.recipe = recipe;
     }
 
+    //need to switch from regular json objects to this explicit mode to handle
+    //long properties which need to be excluded from the index (the instructions 
+    //go over the 1500 byte limit).
     convertToExplicit()
     {
         return [
